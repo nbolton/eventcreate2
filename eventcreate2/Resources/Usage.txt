@@ -1,0 +1,38 @@
+
+eventcreate2 /L logname /SO source /ID eventid /T type /D description
+
+Description:
+    This command line tool enables an administrator to create
+    a custom event ID and message in a specified event log.
+
+Parameter List:
+
+    /L    logname          Specifies the event log to create
+                           an event in. This can be a custom event log.
+                           If the log does not already exist, then one
+                           will be created automatically.
+
+    /T    type             Specifies the type of event to create.
+                           Valid types: ERROR, WARNING, INFORMATION.
+
+    /SO   source           Specifies the source to use for the
+                           event (if not specified, source will default
+                           to 'eventcreate'). A valid source can be any
+                           string and should represent the application
+                           or component that is generating the event.
+
+    /ID   id               Specifies the event ID for the event. A
+                           valid custom message ID is in the range
+                           of 1 - 1000.
+
+    /D    description      Specifies the description text for the new event.
+
+    /?                     Displays this help message.
+
+
+Examples:
+    EVENTCREATE /T ERROR /ID 1000
+        /L APPLICATION /D "My custom error event for the application log"
+
+    EVENTCREATE /T ERROR /ID 999 /L APPLICATION
+        /SO WinWord /D "Winword event 999 happened due to low diskspace"
