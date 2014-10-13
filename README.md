@@ -1,4 +1,4 @@
-*eventcreate2* is an alternative implementation of Microsoft's eventcreate command.
+An alternative implementation of Microsoft's eventcreate command.
 
 If this error is familiar, you're in the right place:
 
