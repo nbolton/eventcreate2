@@ -3,6 +3,7 @@
 If this error is familiar, you're in the right place:
 
 > eventcreate /l "test" /so "test" /d "hello world" /t information /id 1
+
 > ERROR: 'test' log does not exist. Cannot create the event.
 
 When run as administrator, *eventcreate2* will automatically create custom event logs, where eventcreate (the original) does not.
