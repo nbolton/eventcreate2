@@ -1,5 +1,3 @@
-An alternative implementation of Microsoft's eventcreate command.
-
 If this error is familiar, you're in the right place:
 
 > eventcreate /l "test" /so "test" /d "hello world" /t information /id 1
