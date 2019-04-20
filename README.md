@@ -8,4 +8,4 @@ When run as administrator, *eventcreate2* will automatically create custom event
 
 > eventcreate2 /l "test" /so "test" /d "hello world" /t information /id 1
 
-*Note:* After running the command, restart event viewer (if running), your log will appear under "Applications and Sevrices logs".
+*Note:* After running the command, restart event viewer (if running), your log will appear under "Applications and Services logs".
